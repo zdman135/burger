@@ -2,8 +2,9 @@
   "name": "burger",
   "version": "1.0.0",
   "description": "burger eater",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node app/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +24,8 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "mysql": "^2.16.0"
+  },
+  "engines": {
+    "node": "11.10.0"
   }
 }
