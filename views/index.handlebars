@@ -1,4 +1,8 @@
-  <h1>Eat-Da-Burger</h1>
+<div class="jumbotron">
+  <h1 class="display-4">Eat-Da-Burger</h1>
+  <p class="lead"><img src="/assets/images/burger.jpg"></p>
+
+</div>
     <div class="container">
         <div class="row">
           <div class="col-sm">
@@ -15,14 +19,14 @@
             {{/each}}  
           </div>
 
-          <div class="col-sm">
+          <div class="col-sm bg-secondary">
             <form id="create-burger">
               <div class="form-group">
                 <h3><label>Burger Name</label></h3>
                 <input type="text" class="form-control" id="burger-name" placeholder="ex: Big Mac">
               </div>
               <p>
-                Enter the burger name you want to eat. Then click Submit.
+                Enter the burger you want to order.
               </p>
               <button id="submit-burger" type="submit" class="btn btn-primary">Submit</button>
             </form>

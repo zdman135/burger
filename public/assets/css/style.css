@@ -1,0 +1,42 @@
+body {
+    background-color: #d28025;
+  }
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+.container {
+    margin-top: 50px;
+}
+
+.jumbotron {
+    text-align: center;
+    padding: 32px;
+}
+
+.col-sm {
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card {
+    margin-top: 10px;
+    background-color: #e9ecef;
+    border-radius: 15px;
+}
+.card-body {
+    text-align: center;
+    padding: 4px;
+}
+
+.card-title {
+    margin: 0px;
+}
+
+.eat-burger {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border: 0px;
+}
