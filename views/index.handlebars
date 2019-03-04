@@ -1,0 +1,46 @@
+  <h1>Eat-Da-Burger</h1>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h3>Burgers Ordered</h3>
+            {{#each result}}
+            {{#unless this.devoured}}
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">{{this.burger_name}} </h5>
+                <button id="{{this.id}}" class="btn btn-primary eat-burger">eat!</button>
+              </div>
+            </div>
+            {{/unless}}
+            {{/each}}  
+          </div>
+
+          <div class="col-sm">
+            <form id="create-burger">
+              <div class="form-group">
+                <h3><label>Burger Name</label></h3>
+                <input type="text" class="form-control" id="burger-name" placeholder="ex: Big Mac">
+              </div>
+              <p>
+                Enter the burger name you want to eat. Then click Submit.
+              </p>
+              <button id="submit-burger" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+
+          <div class="col-sm">
+            <h3>Burgers Devoured</h3>
+            
+            {{#each result}}
+            {{#if this.devoured}}
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">{{this.burger_name}} </h5>
+              </div>
+            </div>
+            {{/if}}
+            {{/each}}  
+
+          </div>
+        </div>
+      </div>
